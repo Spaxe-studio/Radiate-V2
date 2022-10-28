@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Exclude from "../assets/img/Exclude.svg";
+import vectorTax from "../assets/img/vectorTax.svg";
 import heroImage from "../assets/img/hero-img.svg";
 import tokenImage from "../assets/img/tokenomic-img.svg";
 import pic1 from "../assets/img/photo1.svg";
@@ -57,157 +59,113 @@ const people = [
 ];
 export default function Home() {
   return (
-    <main className="lg:relative bg-transparent">
+    <main className="lg:relative bg-black">
       {/* hero */}
-      <div className="mx-auto w-full max-w-7xl pt-16 pb-10 sm:pb-20 text-center lg:py-48 lg:text-left">
-        <div className="px-4 sm:px-8 lg:w-1/2 xl:pr-16">
-          <h1 className="text-4xl font-black tracking-widest text-white sm:text-5xl md:text-6xl lg:text-5xl xl:text-7xl">
-            Radiate
-          </h1>
-          <p className="mx-auto mt-3 max-w-md text-lg text-white sm:text-xl md:mt-5 md:max-w-3xl">
-            Our vision is to create a better DeFi by consistently providing new and unique utilities that further this space
-          </p>
-          <div className="mt-10 sm:flex sm:justify-center lg:justify-start">
-            <div className="rounded-full shadow">
-              <a
-                href="#"
-                className="flex w-full items-center justify-center rounded-full border border-white bg-transparent px-8 py-3 text-base font-medium text-white hover:text-black hover:bg-white md:py-4 md:px-10 md:text-lg"
-              >
-                Discover More &nbsp; &gt;
-              </a>
-            </div>
+      <div className=" overflow-hidden ">
+        <div className="items-center text-center justify-center">
+          <span className="relative text-[#18191bc8] font-bold top-5 text-center uppercase text-[5rem] lg:text-[12rem] md:text-[8rem] tracking-widest  ">Forge</span>
+          <h1 className="text-center absolute lg:ml-[28rem] md:ml-[15rem] sm:ml-[15rem] ml-[7rem] font-bold uppercase mt-[-4rem] md:mt-[-6rem] lg:mt-[-10rem] text-5xl sm:text-5xl md:text-7xl lg:text-8xl">Forge </h1>              
+          <h2 className=" text-center text-2xl sm:text-3xl md:text-4xl  lg:mt-[-2rem] mt-0 lg:text-5xl">
+            Forging a <span className="border-t">better</span> DeFi for all
+          </h2>
+          <a href="#">
+          <button className="mt-10 bg-[#DD2424] hover:text-black hover:bg-white py-2 pb-3 px-10 ">
+            Discover More  &nbsp; &gt;
+          </button> 
+          </a>
+        </div>
+
+        <div className="lg:flex md:flex lg:mt-[10rem] mt-[7rem] md:mt-[6rem] mt-6rem lg:ml-[5rem] md:ml-[3rem] ml-[1rem]" >
+          <Image src={Exclude} alt="#" className="mt-[5rem] top-5 "  />
+          <div className=" lg:ml-auto md:ml-[4rem] text-start lg:w-[50%] md:w-[70%] sm:w-[90%] w-full mt-[5rem] lg:mt-[7rem]">
+            <h2 className=" w-[40%] lg:text-8xl text-4xl ">DeFi Forge</h2>
+            <p className="text-sm lg:w-[60%] mt-5 tracking-wide">
+              Foge Protocol’s vision is to create utilities that not only create a safer, more user friendly 
+              atmosphere for DeFi but also enhances every individuals DeFi experience.
+            </p>
+            <a href="#">
+              <button className="mt-[4rem] rounded-full border hover:text-black hover:bg-white py-2 pb-3 px-10 ">
+                Explore More  &nbsp; &gt;
+              </button> 
+            </a>
           </div>
         </div>
-      </div>
-      <div className="relative mb-10 sm:mb-0 h-64 w-full sm:h-72 md:h-96 lg:absolute lg:inset-y-8 lg:right-0 lg:w-1/2">
-        <Image
-          className="absolute inset-0 h-full w-full object-cover"
-          src={heroImage}
-          alt="radiate profile image"
-        />
-      </div>
-
-      {/* about section */}
-      <div>
-        <div className="mx-auto max-w-7xl py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-normal tracking-tight text-white sm:text-5xl lg:text-6xl">
-            Tokenomics
+            
+        <div>
+          <h1 className=" text-center w-[95%] md:w-[90%] lg:w-[80%] ml-auto mr-auto mt-[5rem] lg:mt-[8rem] text-3xl sm:text-4xl md:text-5xl lg:text-7xl">
+            DeFi is the <span className="font-bold">future </span> and it is all of our responsibilities to build a
+            better future for those that <span className="font-bold">follow behind </span>us
           </h1>
-          <p className="mt-6 max-w-3xl text-xl text-white">
-            Buy/Sell tax - 3% Developement 2% Auto LP
-          </p>
-          <div className="mt-24">
-            <Image
-              className=" inset-0 h-full w-full object-cover"
-              src={tokenImage}
-              alt="radiate profile image"
-            />
-          </div>
         </div>
-      </div>
 
-      {/* roadmap */}
-      <div>
-        <div className="mx-auto max-w-7xl py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-normal tracking-tight text-white sm:text-5xl lg:text-6xl">
-            Roadmap
-          </h1>
-
-          <div className="mt-24">
-            <div className="flow-root">
-              <ul className="mb-10">
-                {activity.map((activityItem, activityItemIdx) => (
-                  <li key={activityItem.id}>
-                    <div className="relative pb-8">
-                      {activityItemIdx !== activity.length - 1 ? (
-                        <span
-                          className="absolute top-5 left-2.5 -ml-px h-full w-0.5 bg-gray-200"
-                          aria-hidden="true"
-                        />
-                      ) : null}
-                      <div className="relative flex items-start space-x-12">
-                        <>
-                          <div className="relative">
-                            <div className="flex h-5 w-5 items-center justify-center rounded-full bg-gray-100 ring-white" />
-                          </div>
-                          <div className="min-w-0 min-h-24 flex-1">
-                            <div className="text-sm">
-                              <a
-                                href="/"
-                                className="sm:text-center lg:text-left subpixel-antialiase tracking-tight text-4xl lg:text-5xl sm:text-lg leading-wide font-medium text-[#fff]"
-                              >
-                                {activityItem?.title}
-                              </a>
-                            </div>
-
-                            <div className="font-light mt-8 text-white md:text-4xl dark:text-gray-100">
-                              <p>{activityItem?.comment}</p>
-                            </div>
-                          </div>
-                        </>
-                      </div>
+            <div className="mt-[8rem] lg:flex md:flex py-[5rem] bg-[#0E0E0E]">
+               <div  className=" lg:ml-[5rem] ml-[2rem] lg:w-[50%] w-full">
+                    <h1 className="text-5xl">Tokenomics</h1>
+                    <button className=" mt-[3rem] rounded-full border hover:text-black hover:bg-white pb-1 px-6">Taxes</button>
+                    <div >
+                        <div className="mt-7 flex lg:w-[70%] w-full">
+                            <Image src={vectorTax} alt="tax" />
+                            <span className=" ml-auto text-sm lg:w-[85%] w-full">2% Automatically added to the Liquidity Pool</span>
+                        </div>
+                        <div className="mt-5 flex lg:w-[70%] w-full ">
+                            <Image src={vectorTax} alt="tax" />
+                            <span className="ml-auto  text-sm lg:w-[85%] w-full ">
+                                3% Development tax to further the project and provide revolutionary utilities
+                            </span>
+                        </div>
+                        <div className="mt-7 flex lg:w-[70%] w-full">
+                            <Image src={vectorTax} alt="tax" />
+                            <span className=" ml-auto text-sm lg:w-[85%] w-full ">88% of Total Supply to LP</span>
+                        </div>
+                        <div className="mt-7 flex lg:w-[70%] w-full ">
+                            <Image src={vectorTax} alt="tax" />
+                            <span className=" ml-auto  text-sm lg:w-[85%] w-full ">12% of Total Supply reserved for staking</span>
+                        </div>
                     </div>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* The Team */}
-      <div className="mx-auto max-w-7xl py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
-        <h1 className="text-4xl font-normal tracking-tight text-white sm:text-5xl lg:text-6xl">
-          The Team
-        </h1>
-        <div className="mt-24">
-          <ul
-            role="list"
-            className="space-y-24 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:gap-x-8"
-          >
-            {people.map((person) => (
-              <li key={person.name} className="">
-                <div className="space-y-4 p-6 border border-white ">
-                  <Image
-                    sizes="full"
-                    className="rounded-lg shadow-lg"
-                    src={person.imageUrl}
-                    alt="profile image"
-                  />
-                  <div className="space-y-1 text-lg font-medium leading-6">
-                    <h3 className="text-white text-4xl">{person.name}</h3>
-                  </div>
-                  <div className="text-lg">
-                    <p className="text-white">{person.bio}</p>
-                  </div>
-
-                  <ul role="list" className="flex space-x-5">
-                    <li>
-                      <div className="rounded-full shadow">
-                        <a
-                          href={person.twitterUrl}
-                          className="flex w-full items-center justify-center rounded-full border border-white bg-transparent px-8 py-3 text-base font-medium text-white hover:text-black hover:bg-white md:py-4 md:px-10 md:text-lg"
-                        >
-                          Twitter
-                        </a>
-                      </div>
-                    </li>
-                    <li>
-                      <div className="rounded-full shadow">
-                        <a
-                          href={person.linkedinUrl}
-                          className="flex w-full items-center justify-center rounded-full bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 px-8 py-3 text-base font-medium text-white md:py-4 md:px-10 md:text-lg"
-                        >
-                          LinkedIn
-                        </a>
-                      </div>
-                    </li>
-                  </ul>
                 </div>
-              </li>
-            ))}
-          </ul>
-        </div>
+                <div className="w-[30%] py-[12rem] bg-[red]"></div>
+            </div>
+
+            <div className="lg:mt-[10rem] mt-[5rem] ">
+                <h1 className="ml-[3rem]">Team</h1>
+                <div className=" lg:flex  mt-[5rem] ">
+                    <div className="border p-2 mr-10 ml-10 ">
+                        <div className="px-5 py-[8rem] bg-white"> </div>
+                        <div className="px-6 py-3">
+                          <h3 className="font-bold text-[20px]">Forge Master</h3>
+                          <p className="text-sm w-[80%] mt-3">Doxxing will commence after all utilites are released</p>
+                          <div className="flex mt-5">
+                            <button className="border px-7 lg:px-10 py-1 rounded-full mr-5 hover:bg-white hover:text-black ">Twitter</button>
+                            <button className="border px-7 lg:px-10 py-1 rounded-full bg-white text-black font-bold hover:bg-black hover:text-white">Linkedin</button>
+                          </div>
+                        </div>
+                    </div>
+
+                    <div className="border p-2 mr-10 ml-10 mt-10 lg:mt-0 lg:ml-0 ">
+                        <div className="px-5 py-[8rem] bg-white"> </div>
+                        <div className="px-6 py-3">
+                            <h3 className="font-bold text-[20px]">The Black Smith</h3>
+                            <p className="text-sm w-[80%] mt-3">Doxxing will commence after all utilites are released</p>
+                            <div className="flex mt-5">
+                                <button className="border px-7 lg:px-10 py-1 rounded-full mr-5 hover:bg-white hover:text-black">Twitter</button>
+                                <button className="border px-7 lg:px-10 py-1 rounded-full bg-white text-black font-bold hover:bg-black hover:text-white">Linkedin</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className=" border p-2  mr-10 ml-10 mt-10 lg:mt-0 lg:ml-0">
+                        <div className="px-5 py-[8rem] bg-white"> </div>
+                        <div className="px-6 py-3">
+                            <h3 className="font-bold text-[20px]">The Anvil Master</h3>
+                            <p className="text-sm w-[80%] mt-3">Doxxing will commence after all utilites are released</p>
+                            <div className="flex mt-5">
+                                <button className="border px-7 lg:px-10 py-1 rounded-full mr-5 hover:bg-white hover:text-black">Twitter</button>
+                                <button className="border px-7 lg:px-10 py-1 rounded-full bg-white text-black font-bold hover:bg-black hover:text-white">Linkedin</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
       </div>
     </main>
   );
