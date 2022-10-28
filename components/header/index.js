@@ -22,8 +22,8 @@ export default function Header() {
           <div className="flex flex-1 items-center md:absolute md:inset-y-0 md:left-0">
             <div className="flex w-full items-center justify-between md:w-auto">
               <Link href="/">
-                <a className="text-white tracking-widest font-black text-4xl">
-                  RADIATE
+                <a className="text-[red] tracking-widest font-black text-4xl">
+                  FORGE
                 </a>
               </Link>
               <div className="-mr-2 flex items-center md:hidden">
@@ -73,7 +73,7 @@ export default function Header() {
               <div>
                 <Link href="/">
                   <a className="font-black tracking-widest text-black sm:text-white">
-                    RADIATE
+                    FORGE
                   </a>
                 </Link>
               </div>

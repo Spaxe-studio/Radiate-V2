@@ -8,9 +8,9 @@ function MyApp({ Component, pageProps }) {
     <MoralisProvider initializeOnMount={false}>
       <NotificationProvider>
         <div className="bg-black">
-          <Layout>
-            <Component {...pageProps} />
-          </Layout>
+            <Layout>
+              <Component {...pageProps} />
+            </Layout>
         </div>
       </NotificationProvider>
     </MoralisProvider>
