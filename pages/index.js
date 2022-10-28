@@ -81,9 +81,7 @@ export default function Home() {
             <h2 className=" w-[40%] lg:text-8xl text-4xl ">DeFi Forge</h2>
             <p className="text-sm lg:w-[60%] mt-5 tracking-wide">
               Foge Protocol’s vision is to create utilities that not only create a safer, more user friendly 
-              atmosphere for DeFi but also enhances every individuals DeFi experience.
-            </p>
-            <a href="#">
+              atmosphere for DeFi but als
               <button className="mt-[4rem] rounded-full border hover:text-black hover:bg-white py-2 pb-3 px-10 ">
                 Explore More  &nbsp; &gt;
               </button> 
