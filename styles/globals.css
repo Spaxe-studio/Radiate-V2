@@ -3,10 +3,17 @@
 @tailwind utilities;
 
 @layer base {
-  .bg-home {
-    /* background: url("../assets/img/bg-home.svg"); */
+  .hero-bg {
+   background: url("../assets/img/hero-bg.svg");
     background-color: #fff;
-    background-position: top;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .describe-bg {
+   background: url("../assets/img/describe-bg.svg");
+    background-color: #fff;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }

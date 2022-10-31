@@ -5,10 +5,13 @@ import { Popover, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useRouter } from "next/router";
 import { ConnectButton } from "web3uikit";
+import logo from "../../assets/img/logo.svg";
+import Image from "next/image";
 
 const navigation = [
   { name: "Home", href: "/" },
   { name: "Stake", href: "/stake" },
+  { name: "Generate Token", href: "/token" },
 ];
 export default function Header() {
   const router = useRouter();
@@ -22,9 +25,12 @@ export default function Header() {
           <div className="flex flex-1 items-center md:absolute md:inset-y-0 md:left-0">
             <div className="flex w-full items-center justify-between md:w-auto">
               <Link href="/">
-                <a className="text-[red] tracking-widest font-black text-4xl">
-                  FORGE
-                </a>
+                <span className="text-[red] flex items-center tracking-widest font-black text-3xl">
+                  <span className="mr-2">
+                    <Image src={logo} alt="forge-logo" />
+                  </span>
+                  <span>FORGE</span>
+                </span>
               </Link>
               <div className="-mr-2 flex items-center md:hidden">
                 <Popover.Button className="inline-flex items-center justify-center rounded-md bg-gray-50 p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">

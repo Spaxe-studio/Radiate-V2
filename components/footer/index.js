@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className=" border-white">
       <div className="mx-auto max-w-7xl overflow-hidden py-8 px-4 sm:px-6 lg:px-8">
         <h2 className="mt-2 text-4xl text-center font-normal text-white">
-          RADIATE
+          FORGE
         </h2>
         <div className="mt-8 flex items-center justify-center">
           <a
